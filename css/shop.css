@@ -1,0 +1,237 @@
+.header{
+    height: 150px;
+}
+ul{
+    margin-bottom: 0
+}
+.menu a{
+text-decoration: none;
+}
+.header_logo img{
+    height: 150px;
+}
+.menu li{
+    display: inline-block;
+    padding-left: 20px;
+    font-size: x-large
+}
+.cart img{
+    height: 50px;
+}
+div.cart_empty::after, div.cart_not_empty::after{
+    content: "V";
+    width: 20px;
+    height: 20px;
+    display: inline;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: 1px solid red;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 20px;
+    color: red;
+    font-weight: 800
+}
+div.cart_empty::after{
+    display: none
+}
+div.cart_not_empty::after{
+    display: inline;
+}
+.slider{
+    width: 100%;
+}
+#games{
+width: 100%;
+}
+.coin-slider{
+    height: 280px;
+}
+.block_item{
+    background-color: gray;
+    height: 180px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.block_item img{
+    height: 100%;
+}
+.blocks_down{
+    margin-top: 20px
+}
+.overlay{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    transition: opacity 0.5s ease;
+    z-index: 2;
+    overflow: hidden;
+}
+.discr_block{
+    text-align: center;
+    opacity: 0;
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 30px;
+    transition: opacity 0.5s ease;
+    z-index: 3;
+}
+.blocks .link_block:hover .overlay{
+    opacity: 1;
+}
+.blocks .link_block:hover .discr_block{
+    opacity: 1;
+}
+.container_top{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.border_plus_text{
+    border: 1px solid #575756;
+    width: 100px;
+}
+.wrap_text{
+    padding: 0 20px
+}
+.italian_products{
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+}
+.product_box{
+    height: 300px;
+    margin-bottom: 5px;
+}
+.new_prodacts{
+    font-size: 16px;
+    color: rgba(87, 87, 86, 255);
+    text-transform: uppercase;
+    text-align: center;
+}
+.img_prodact_1{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+.img_prodact_1 img{
+    max-width: 100%;
+    height: auto;
+    padding: 5px 5px 5px
+}
+.product_container_new{
+    border: 1px solid rgba(120,120,120,0.4);
+    border-radius: 15px;
+    position: relative;
+    width: 100%; 
+    height: 100%;
+}
+.product_container_new a{
+    text-decoration: none
+}
+.product_discr_price{
+    text-align: center;
+}
+.discr_category{
+    font-size: 10px;
+}
+.discr_1{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5
+}
+.discr_2{
+    font-size: 12px;
+    margin-top: -5px;
+}
+.article{
+    margin-top: 5px;
+    font-size: 10px
+}
+.price{
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn_cart{
+    text-align: center;
+    margin: 5px 5px 5px;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+.add_cart{
+    color: green;
+    transition: all ease-out .4s;
+}
+.btn_cart:hover{
+    background-color: rgba(0, 200, 0, 0.548);
+}
+.btn_cart:hover .add_cart{
+color: white;
+}
+.img_home_text{
+    width: 100%;
+}
+.text{
+    text-align:justify
+}
+.img_wrap{
+   width: 30px
+}
+.footer_wrap{
+    margin-top: 20px;
+}
+.bg_footer{
+    background: #000;
+}
+.footer_phones .phone1, .phone2{
+    color: #fff;
+    font-size: 16px;
+}
+.bg_footer .email{
+    color: #fff;
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+.wrap_btn{
+    text-align: center;
+    transform: translate(0,-50%);
+}
+.btn_top{
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    outline: none!important;
+    box-shadow: none!important;
+    line-height: 1;
+}
+.btn_top:hover  {
+    background: rgb(81, 178, 169);
+}
+.menu_bottom {
+    padding-bottom: 50px;
+}
+.menu_bottom .menu_bottom_item a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgba(88, 89, 91, 255);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.menu_bottom_item{
+    list-style-type: none
+}
+.menu_bottom .menu_bottom_item:hover a{
+    color:rgb(115, 199, 168);
+}

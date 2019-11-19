@@ -1,0 +1,108 @@
+
+.header_foto{
+    background-image: url(../img/header_logo_1.png);
+    height: 290px;
+    width: 100%;
+}
+___________________
+.left_menu li{
+    list-style-type: none
+}
+.panel{
+    margin-bottom: 5px;
+}
+.panel span{
+    background-color:#137fca;
+    color: #ffffff;
+    display: block;
+    padding: 10px 40px 10px 15px;
+    position: relative;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.panel span:hover{
+    background-color: #3c5786;
+}
+.panel span::after{
+    content: "\f107";
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 15px;
+    transition: 0.3s;
+}
+.panel.in span::after{
+transform: rotate(180deg);
+}
+.panel.in span{
+    background-color: #09afdf;
+}
+.panel-colaps{
+    display: none;
+}
+.tree_item:hover{
+    background-color: #09afdf;
+}
+.tree_item{
+    cursor: pointer;
+    list-style-type: none;
+}
+.products_d{
+    display: none
+}
+.products_d.active{
+    display: block
+}
+/* Cart CSS */
+div.products_in_cart{
+    height: auto;
+    margin-bottom: 10px
+}
+.product_in_cart{
+    max-width: 200px;
+    max-height: 300px
+}
+div.cart_block{
+    height: auto;
+}
+.button{
+    display: flex;
+    justify-content: center
+}   
+button.buy{
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    background-color: green;    
+}
+div.cart_empty::after, div.cart_not_empty::after{
+    content: "V";
+    width: 20px;
+    height: 20px;
+    display: inline;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: 1px solid red;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 20px;
+    color: red;
+    font-weight: 800
+}
+div.cart_empty::after{
+    display: none
+}
+div.cart_not_empty::after{
+    display: inline;
+}
+/* form */
+a.go_to_form{
+    color: white;
+    text-decoration: none;
+}
+div.button button{
+    margin-top: 20px;
+    background-color: green;
+    color: white
+}
